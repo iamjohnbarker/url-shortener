@@ -1,3 +1,4 @@
 exports.handler = function(event, context, callback) {
-  console.log("hello")
+  console.log(event)
+  console.log(context)
 }
