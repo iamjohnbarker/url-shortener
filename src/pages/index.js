@@ -13,6 +13,7 @@ const IndexPage = () => (
       method="POST"
       data-netlify="true"
       data-netlify-recaptcha="true"
+      action="/page-2"
     >
       <p>
         <label>
