@@ -8,6 +8,21 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
+    <form name="contact" netlify>
+      <p>
+        <label>
+          URL <input type="url" name="url" />
+        </label>
+      </p>
+      <p>
+        <label>
+          Short link <input type="text" name="short" />
+        </label>
+      </p>
+      <p>
+        <button type="submit">Send</button>
+      </p>
+    </form>
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
