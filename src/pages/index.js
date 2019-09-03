@@ -8,7 +8,12 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <form name="url-shortener" method="POST" data-netlify="true">
+    <form
+      name="url-shortener"
+      method="POST"
+      data-netlify="true"
+      data-netlify-recaptcha="true"
+    >
       <p>
         <label>
           URL <input type="url" name="url" />
@@ -19,6 +24,7 @@ const IndexPage = () => (
           Short link <input type="text" name="short" />
         </label>
       </p>
+      <div data-netlify-recaptcha="true"></div>
       <p>
         <button type="submit">Send</button>
       </p>
