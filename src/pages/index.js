@@ -8,24 +8,18 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <form
-      name="url-shortener"
-      method="POST"
-      data-netlify="true"
-      data-netlify-recaptcha="true"
-      action="/page-2"
-    >
+    <form name="contact" method="POST" data-netlify="true">
       <p>
         <label>
-          URL <input type="url" name="url" />
+          Your Name: <input type="text" name="name" />
         </label>
       </p>
       <p>
         <label>
-          Short link <input type="text" name="short" />
+          Your Email: <input type="email" name="email" />
         </label>
       </p>
-      <div data-netlify-recaptcha="true"></div>
+      <p></p>
       <p>
         <button type="submit">Send</button>
       </p>
